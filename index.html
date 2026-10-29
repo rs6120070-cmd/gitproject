@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CricTrack - Cricket Score Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+            <div class="logo">🏏</div>
+
+            <div>
+                <h1>Cric<span>Track</span></h1>
+                <p>CRICKET SCORE TRACKER</p>
+            </div>
+        </div>
+
+        <div class="header-buttons">
+            <button class="new-match">＋ New Match</button>
+            <button class="reset-match">↻ Reset Match</button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= SCORE HEADER ================= -->
+
+    <section class="score-header">
+
+        <div class="team team1">
+
+            <button class="edit-team">✎</button>
+
+            <div class="team-icon">🇮🇳</div>
+
+            <div>
+                <small>TEAM 1</small>
+                <h2>India XI</h2>
+            </div>
+
+        </div>
+
+
+        <div class="main-score">
+
+            <h1>0/0</h1>
+            <p>0.0 Overs</p>
+
+        </div>
+
+
+        <div class="team team2">
+
+            <div>
+                <small>TEAM 2</small>
+                <h2>Australia XI</h2>
+            </div>
+
+            <div class="team-icon">🇦🇺</div>
+
+            <button class="edit-team">✎</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN GRID ================= -->
+
+    <main class="dashboard">
+
+
+        <!-- ================= LIVE MATCH ================= -->
+
+        <section class="card live-match">
+
+            <h2 class="title">
+                <span class="green-dot"></span>
+                LIVE MATCH
+            </h2>
+
+
+            <!-- MATCH STATS -->
+
+            <div class="stats">
+
+                <div class="stat blue">
+                    <span>🏃 RUN RATE</span>
+                    <strong>0.00</strong>
+                </div>
+
+                <div class="stat green">
+                    <span>⏱ OVERS</span>
+                    <strong>0.0</strong>
+                </div>
+
+                <div class="stat orange">
+                    <span>🎯 TARGET</span>
+                    <strong>—</strong>
+                </div>
+
+                <div class="stat purple">
+                    <span>📈 REQ. RUN RATE</span>
+                    <strong>—</strong>
+                </div>
+
+            </div>
+
+
+            <!-- CURRENT OVER -->
+
+            <div class="current-over">
+
+                <div class="over-heading">
+                    <h3>CURRENT INNINGS</h3>
+                    <span>This Over: 0 Runs</span>
+                </div>
+
+                <div class="balls">
+
+                    <span>–</span>
+                    <span>–</span>
+                    <span>–</span>
+                    <span>–</span>
+                    <span>–</span>
+                    <span>–</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RUN BUTTONS -->
+
+            <div class="run-area">
+
+                <h3>ADD RUNS</h3>
+
+                <p>Click on runs or extras to update the score</p>
+
+
+                <div class="run-buttons">
+
+                    <button class="run run1">1</button>
+                    <button class="run run2">2</button>
+                    <button class="run run3">3</button>
+                    <button class="run run4">4</button>
+                    <button class="run run5">5</button>
+                    <button class="run run6">6</button>
+
+                    <button class="wicket">▥ WICKET</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXTRAS -->
+
+            <div class="extras">
+
+                <h3>EXTRAS</h3>
+
+                <div class="extra-buttons">
+
+                    <button class="wide">● Wide</button>
+                    <button class="no-ball">● No Ball</button>
+                    <button class="bye">● Bye</button>
+                    <button class="leg-bye">● Leg Bye</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BATSMEN ================= -->
+
+        <section class="card">
+
+            <div class="card-heading">
+
+                <h2>👤 BATSMEN</h2>
+
+                <button class="edit-button">
+                    ✎ Edit Batsmen
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Batsman</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td class="player">
+                                🏏 Rudraksh Sharma
+                            </td>
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.00</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="player">
+                                🏏 Daksh Sharma
+                            </td>
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.00</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOWLERS ================= -->
+
+        <section class="card">
+
+            <div class="card-heading">
+
+                <h2>🎯 BOWLERS</h2>
+
+                <button class="edit-button">
+                    ✎ Edit Bowler
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Bowler</th>
+                            <th>Overs</th>
+                            <th>Runs</th>
+                            <th>Wickets</th>
+                            <th>Econ</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td class="player bowler">
+                                🎯 Divansh Sharma
+                            </td>
+
+                            <td>0.0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.00</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SCORECARD ================= -->
+
+        <section class="card">
+
+            <h2>📊 SCORECARD</h2>
+
+            <div class="scorecard-team">
+
+                <strong>India XI</strong>
+
+                <span>0/0</span>
+
+                <small>(0.0 Overs)</small>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Batsman</th>
+                            <th>R</th>
+                            <th>B</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Rudraksh Sharma</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Daksh Sharma</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.00</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong>0/0 (0.0 Overs)</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RECENT BALLS ================= -->
+
+        <section class="card recent-card">
+
+            <h2>🔵 RECENT BALLS</h2>
+
+            <div class="no-balls">
+
+                <div class="cricket-ball">🏏</div>
+
+                <h3>No balls bowled yet</h3>
+
+                <p>Start the match by adding runs or extras</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= TOSS ================= -->
+
+    <section class="toss">
+
+        <span>🏆</span>
+
+        <p>
+            <strong>Toss:</strong>
+            India XI won the toss and elected to bat.
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        CricTrack © 2026 | Built with ❤️ using HTML, CSS & JavaScript
+
+    </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
